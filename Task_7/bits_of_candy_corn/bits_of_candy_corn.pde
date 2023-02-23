@@ -3,24 +3,24 @@
 
 void setup(){
   
-  ArrayList String = new ArrayList();
-  String.add("hej");
-  String.add("med");
-  String.add("dig");
-  printanddelete(String);
+  ArrayList<String> string= new ArrayList();
+  string.add("hej");
+  string.add("med");
+  string.add("dig");
+  printanddelete(string);
   
-  ArrayList Boolean = new ArrayList();
-  Boolean.add(false);
-  Boolean.add(true);
-  Boolean.add(false);
-  println(Boolean.get(0));
+  ArrayList<Boolean> bool= new ArrayList();
+  bool.add(false);
+  bool.add(true);
+  bool.add(false);
+  println(bool.get(0));
   
-  ArrayList Integer = new ArrayList();
-  Integer.add((int)random(0,10));
-  Integer.add((int)random(0,10));
-  Integer.add((int)random(0,10));
-  println(printanddelete2(Integer));
-  println(printanddelete3(Integer));
+  ArrayList<Integer> inter = new ArrayList();
+  inter.add((int)random(0,10));
+  inter.add((int)random(0,10));
+  inter.add((int)random(0,10));
+  println(PrintSum(inter));
+  println(PrintAverage(inter));
  
   
 }
@@ -33,7 +33,7 @@ void printanddelete(ArrayList tmp){
 
 int sum = 0;
 
-int printanddelete2(ArrayList tmp){
+int PrintSum(ArrayList tmp){
   for(int x=0;x<tmp.size();x++){
     int sum += tmp.get(x);
   }
@@ -41,7 +41,7 @@ int printanddelete2(ArrayList tmp){
   return sum;
 }
 
-int printanddelete3(ArrayList tmp){
+int PrintAverage(ArrayList tmp){
   for(int x=0;x<tmp.size();x++){
     int sum += tmp.get(x);
   }
